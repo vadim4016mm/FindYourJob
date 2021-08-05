@@ -1,35 +1,48 @@
-* {
+[ 5 августа 2021 г. 13:09 ] ⁨Макс⁩: * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    color: #111238;
+}
 a {
-    color: #0f1138;
+    color: #0f1136;
     text-decoration: none;
     transition: color .3s;
 }
-
-/* header */
-header {
+.btn{
+    height: 50px;
+    color : #fff ;
+    background: #1A75E8;
+    border-radius: 5px;
+    border: none;
+}
+/*header*/
+header{
     width: 1200px;
     max-width: 100%;
+    margin: 0 auto;
     padding: 44px 32px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: absolute;
+    position:absolute;
     left: 50%;
     transform: translate(-50%);
 }
 .logo a {
     display: flex;
     align-items: center;
+    
 }
 .logo img {
-    margin: 10px;
+    margin-right: 10px;
 }
 .logo span {
-    color:#1A75E8;
+    color: #1A75E8;
 }
 .menu {
     list-style: none;
@@ -42,7 +55,62 @@ header {
 .menu li:hover a {
     color: #1A75E8;
 }
+/*hero*/
+.hero {
+   background: #F2F3F6;
+   height: 100vh;
+}
+.hero-wrap{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 32px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: url(../img/hero-image.png) center right / auto no-repeat;
+}
+.hero-info{
+    width: 50%;
+    
+}
+h1 {
+    font-weight: 900;
+font-size: 44px;
+line-height: 53px;
+margin-bottom: 15px;
+}
+p {
+    font-size: 18px;
+    line-height: 140%;
+    margin-bottom: 30px;
+}
+form {
+    margin: 30px 0 5px;
+    background: #fff;
+    padding: 10px;
+}
+form input {
+    width: 49%;
+}
+input[type=search]{
+    height:50px;
+    border:none;
+    padding-left: 15px;
+}
 
+.example {
+    font-size: 14px;
+    line-height: 17px;
+    color: #b2b2b2;
+}
+.example span {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #b2b2b2;
+    border-radius: 5px;
+}
 input[type=submit] {
     color: #0f1138;
     background: transparent;
@@ -57,20 +125,4 @@ input[type=button] {
     border: none;
     border-radius: 5px;
     font-family: Fira Sans;
-}
-
-/* hero */
-.hero {
-    background: #F2F3F6;
-    height: 100vh;
-}
-.hero-wrap {
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0 32px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-
 }
