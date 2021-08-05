@@ -1,4 +1,4 @@
-[ 5 августа 2021 г. 13:09 ] ⁨Макс⁩: * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -68,7 +68,7 @@ header{
     height: 100%;
     display: flex;
     align-items: center;
-    background: url(../img/hero-image.png) center right / auto no-repeat;
+    background: url(../img/изображение_viber_2021-07-29_18-11-43-687.png) center right / auto no-repeat;
 }
 .hero-info{
     width: 50%;
