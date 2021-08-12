@@ -20,6 +20,12 @@ a {
     border-radius: 5px;
     border: none;
 }
+.wrap {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 32px;
+}
 /*header*/
 header{
     width: 1200px;
@@ -61,10 +67,6 @@ header{
    height: 100vh;
 }
 .hero-wrap{
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0 32px;
     height: 100%;
     display: flex;
     align-items: center;
@@ -125,4 +127,42 @@ input[type=button] {
     border: none;
     border-radius: 5px;
     font-family: Fira Sans;
+}
+
+/* category */
+.category {
+    padding-top: 70px;
+    padding-bottom: 80px;
+}
+
+.category h2 {
+    margin-bottom: 40px;
+}
+.tabs {
+    display: flex;
+    justify-content: space-between;
+}
+.tabs input {
+    display: none;
+}
+.tabs label {
+    display: block;
+    background: #F2F3F6;
+    border-radius: 10px;
+    padding: 35px;
+    transition: .3s;
+}
+.tabs label:hover {
+    background: #1A75E8;
+    color: #fff;
+}
+label img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    transition: .3s;
+}
+.tabs label:hover > img {
+    filter: brightness(20);
 }
